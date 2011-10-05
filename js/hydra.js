@@ -117,7 +117,8 @@
   loadApp = function(id, username, password) {
     var url = 'https://build.phonegap.com/api/v1/apps/' + id + '/hydrate';
     var apps = window.localStorage.getItem('apps');
-    
+   
+    console.log('wtf') 
     console.log(url)
 
     // Check the last updated timestamp on build.
