@@ -238,7 +238,12 @@
     var password = $('password').value;
 
     showModal('Talking to build.phonegap.com...');
-    loadApp(id, username, password);
+    try {
+      loadApp(id, username, password);
+    } catch(e) {
+      console.log('HELLO -----------------------------------------', e)
+      console.log(e)
+    }
   }
  
   document.addEventListener('deviceready', function() {
